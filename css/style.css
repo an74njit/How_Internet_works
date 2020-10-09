@@ -81,19 +81,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: x-large;
 }
 /*--------------------------------------------------------------
-# Hero Section
+# introduction Section
 --------------------------------------------------------------*/
-#hero {
+#introduction {
     width: 100%;
     height: 80vh;
     background: #37517e;
 }
 
-#hero .container {
+#introduction .container {
     padding-top: 72px;
 }
 
-#hero h1 {
+#introduction h1 {
     margin: 0 0 10px 0;
     font-size: 48px;
     font-weight: 700;
@@ -101,13 +101,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-#hero h2 {
+#introduction h2 {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 50px;
     font-size: 24px;
 }
 
-#hero .btn-get-started {
+#introduction .btn-get-started {
     font-family: "Jost", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -121,11 +121,11 @@ h1, h2, h3, h4, h5, h6 {
     background: #47b2e4;
 }
 
-#hero .btn-get-started:hover {
+#introduction .btn-get-started:hover {
     background: #209dd8;
 }
 
-#hero .btn-watch-video {
+#introduction .btn-watch-video {
     font-size: 16px;
     display: inline-block;
     padding: 10px 0 8px 40px;
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-#hero .btn-watch-video i {
+#introduction .btn-watch-video i {
     color: #fff;
     font-size: 32px;
     position: absolute;
@@ -144,60 +144,60 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
 }
 
-#hero .btn-watch-video:hover i {
+#introduction .btn-watch-video:hover i {
     color: #47b2e4;
 }
 
-#hero .animated {
+#introduction .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 991px) {
-    #hero {
+    #introduction {
         height: 100vh;
         text-align: center;
     }
-    #hero .animated {
+    #introduction .animated {
         -webkit-animation: none;
         animation: none;
     }
-    #hero .hero-img {
+    #introduction .introduction-img {
         text-align: center;
     }
-    #hero .hero-img img {
+    #introduction .introduction-img img {
         width: 50%;
     }
 }
 
 @media (max-width: 768px) {
-    #hero h1 {
+    #introduction h1 {
         font-size: 28px;
         line-height: 36px;
     }
-    #hero h2 {
+    #introduction h2 {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
     }
-    #hero .hero-img img {
+    #introduction .introduction-img img {
         width: 70%;
     }
 }
 
 @media (max-width: 575px) {
-    #hero .hero-img img {
+    #introduction .introduction-img img {
         width: 80%;
     }
-    #hero .btn-get-started {
+    #introduction .btn-get-started {
         font-size: 16px;
         padding: 10px 24px 11px 24px;
     }
-    #hero .btn-watch-video {
+    #introduction .btn-watch-video {
         font-size: 16px;
         padding: 10px 0 8px 40px;
         margin-left: 20px;
     }
-    #hero .btn-watch-video i {
+    #introduction .btn-watch-video i {
         font-size: 32px;
         top: 7px;
     }
@@ -275,142 +275,56 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Cliens
+# Main Content
 --------------------------------------------------------------*/
-.cliens {
-    padding: 12px 0;
-    text-align: center;
-}
 
-.cliens img {
-    max-width: 45%;
-    transition: all 0.4s ease-in-out;
-    display: inline-block;
-    padding: 15px 0;
-    -webkit-filter: grayscale(100);
-    filter: grayscale(100);
-}
-
-.cliens img:hover {
-    -webkit-filter: none;
-    filter: none;
-    transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-    .cliens img {
-        max-width: 40%;
-    }
-}
-
-/*--------------------------------------------------------------
-# About Us
---------------------------------------------------------------*/
-.about .content h3 {
-    font-weight: 600;
-    font-size: 26px;
-}
-
-.about .content ul {
-    list-style: none;
-    padding: 0;
-}
-
-.about .content ul li {
-    padding-left: 28px;
-    position: relative;
-}
-
-.about .content ul li + li {
-    margin-top: 10px;
-}
-
-.about .content ul i {
-    position: absolute;
-    left: 0;
-    top: 2px;
-    font-size: 20px;
-    color: #47b2e4;
-    line-height: 1;
-}
-
-.about .content p:last-child {
-    margin-bottom: 0;
-}
-
-.about .content .btn-learn-more {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 32px;
-    border-radius: 4px;
-    transition: 0.3s;
-    line-height: 1;
-    color: #47b2e4;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    margin-top: 6px;
-    border: 2px solid #47b2e4;
-}
-
-.about .content .btn-learn-more:hover {
-    background: #47b2e4;
-    color: #fff;
-    text-decoration: none;
-}
-
-/*--------------------------------------------------------------
-# Why Us
---------------------------------------------------------------*/
-.why-us .content {
+.main-content .content {
     padding: 60px 100px 0 100px;
 }
 
-.why-us .content h3 {
+.main-content .content h3 {
     font-weight: 400;
     font-size: 34px;
     color: #37517e;
 }
 
-.why-us .content h4 {
+.main-content .content h4 {
     font-size: 20px;
     font-weight: 700;
     margin-top: 5px;
 }
 
-.why-us .content p {
+.main-content .content p {
     font-size: 15px;
     color: #848484;
 }
 
-.why-us .img {
+.main-content .img {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.why-us .accordion-list {
+.main-content .accordion-list {
     padding: 0 100px 60px 100px;
 }
 
-.why-us .accordion-list ul {
+.main-content .accordion-list ul {
     padding: 0;
     list-style: none;
 }
 
-.why-us .accordion-list li + li {
+.main-content .accordion-list li + li {
     margin-top: 15px;
 }
 
-.why-us .accordion-list li {
+.main-content .accordion-list li {
     padding: 20px;
     background: #fff;
     border-radius: 4px;
 }
 
-.why-us .accordion-list a {
+.main-content .accordion-list a {
     display: block;
     position: relative;
     font-family: "Poppins", sans-serif;
@@ -421,69 +335,81 @@ section {
     outline: none;
 }
 
-.why-us .accordion-list span {
+.main-content .accordion-list span {
     color: #47b2e4;
     font-weight: 600;
     font-size: 18px;
     padding-right: 10px;
 }
 
-.why-us .accordion-list i {
+.main-content .accordion-list i {
     font-size: 24px;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.why-us .accordion-list p {
+.main-content .accordion-list p {
     margin-bottom: 0;
     padding: 10px 0 0 0;
 }
 
-.why-us .accordion-list .icon-show {
+.main-content .accordion-list .icon-show {
     display: none;
 }
 
-.why-us .accordion-list a.collapsed {
+.main-content .accordion-list a.collapsed {
     color: #343a40;
 }
 
-.why-us .accordion-list a.collapsed:hover {
+.main-content .accordion-list a.collapsed:hover {
     color: #47b2e4;
 }
 
-.why-us .accordion-list a.collapsed .icon-show {
+.main-content .accordion-list a.collapsed .icon-show {
     display: inline-block;
 }
 
-.why-us .accordion-list a.collapsed .icon-close {
+.main-content .accordion-list a.collapsed .icon-close {
     display: none;
 }
 
 @media (max-width: 1024px) {
-    .why-us .content, .why-us .accordion-list {
+    .main-content .content, .main-content .accordion-list {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
 @media (max-width: 992px) {
-    .why-us .img {
+    .main-content .img {
         min-height: 400px;
     }
-    .why-us .content {
+    .main-content .content {
         padding-top: 30px;
     }
-    .why-us .accordion-list {
+    .main-content .accordion-list {
         padding-bottom: 30px;
     }
 }
 
 @media (max-width: 575px) {
-    .why-us .img {
+    .main-content .img {
         min-height: 200px;
     }
 }
+
+/*--------------------------------------------------------------
+# Main Content
+--------------------------------------------------------------*/
+.left-container{
+    margin-top: 3rem;
+    width: 75%;
+}
+
+
+
+/*///////////////////////////* erase from here /////////////////////*/
 
 /*--------------------------------------------------------------
 # Skills
