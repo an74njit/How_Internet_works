@@ -31,7 +31,7 @@
     <div class="container  align-items-center">
 
         <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand text-white logo" href="#"> <i class="fas fa-globe"></i> <h3 class="logo">The Internet</h3></a>
+            <a class="navbar-brand text-white logo" href="index.html"> <i class="fas fa-globe"></i> <h3 class="logo">The Internet</h3></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,22 +40,21 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About</a>
+                        <a class="nav-link text-white" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             How The Internet Works
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item " href="#">Domain names</a>
-                            <a class="dropdown-item " href="#">IP Addresses, Packets and Routing</a>
-                            <a class="dropdown-item " href="#">DNS</a>
-                            <a class="dropdown-item " href="#">HTTP and HTTPS protocols</a>
-                            <a class="dropdown-item " href="#">W3C HTML and CSS</a>
-
+                            <a class="dropdown-item " href="project_pages/domain.html">Domain names</a>
+                            <a class="dropdown-item " href="project_pages/ipaddress.html">IP Addresses, Packets and Routing</a>
+                            <a class="dropdown-item " href="project_pages/dns.html">DNS</a>
+                            <a class="dropdown-item " href="project_pages/httpprotocols.html">HTTP and HTTPS protocols</a>
+                            <a class="dropdown-item " href="project_pages/w3c.html">W3C HTML and CSS</a>
                         </div>
                     </li>
 
@@ -79,12 +78,12 @@
                 <h1>How The Internet Works</h1>
                 <h2>In this web site, you will know about how the internet works, its technology, protocols, and different tools that are part of it </h2>
                 <div class="d-lg-flex">
-                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                    <a href="#main-content" class="btn-get-started scrollto">Get Started</a>
                     <a href="https://www.youtube.com/watch?v=x3c1ih2NJEg" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> <i class="far fa-play-circle"></i>  Watch Video </a>
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 introduction-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="Pictures/home1.png" class="img-fluid animated" alt="">
+                <img src="Pictures/mouse.png" class="img-fluid animated home-image" alt="logo.png" >
             </div>
         </div>
     </div>
@@ -101,42 +100,74 @@
 
                 <div class="content">
 
-                    <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                    <h3><strong>How The Internet Works</strong></h3>
                     <p >October 8th, 2020 by <a href="#">Alex V. Nunez</a></p>
                     <hr style="border:solid 1px; color: skyblue; width: 100%; ">
 
-                    <h3><strong>velit pariatur architecto aut nihil</strong></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                    </p>
                 </div>
 
                 <div class="accordion-list">
                     <ul>
                         <li>
-                            <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                            <p>
+                                In this website we will discuss how the internet works along with its technology, protocols, IP addressing and many more concepts that make the internet the most powerful median of communication ever developed.
+                            </p>
+
+                            <p>
+                                In this section, we will briefly introduce the different topics that we will cover over the website such as:
+
+                            </p>
+
+                        </li>
+
+                        <li>
+                            <span> 1. Domain names and ICANN </span>
+                            <div id="accordion-list-1"  data-parent=".accordion-list">
                                 <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                    In this page, we will discuss domain names its functionality, and its role inside the internet, also we will talk about ICANN, the organization in charge of accreditation of registrars to sell domain names.
+
                                 </p>
+                                <a href="project_pages/domain.html" class="reading mt-2 font-italic">Continue reading...</a>
                             </div>
                         </li>
 
                         <li>
-                            <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                            <span> 2. IP Addresses, Packets and Routing</span>
+                            <div id="accordion-list-2"  data-parent=".accordion-list">
                                 <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    This page talks about IP Addresses, its function identifying devices inside a network, and the routing process that the packets take to determine the best path to reach its destination.
                                 </p>
+                                <a href="project_pages/ipaddress.html" class="reading mt-2 font-italic">Continue reading...</a>
                             </div>
                         </li>
 
                         <li>
-                            <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                            <span> 3. Domain Name System (DNS) </span>
+                            <div id="accordion-list-3" data-parent=".accordion-list">
                                 <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    In this section, we will study the Domain Name System and its role in translating domain names to the corresponding IP address to provide webpages.
                                 </p>
+                                <a href="project_pages/dns.html" class="reading mt-2 font-italic">Continue reading...</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span> 4. HTTP and HTTPS protocols </span>
+                            <div id="accordion-list-4"  data-parent=".accordion-list">
+                                <p>
+                                    On this page, we will know about the HTTP and HTTPS Protocols and how they are used to transfer information through the World Wide Web.
+                                </p>
+                                <a href="project_pages/httpprotocols.html" class="reading mt-2 font-italic">Continue reading...</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span> 5. W3C and HTML and CSS </span>
+                            <div id="accordion-list-5"  data-parent=".accordion-list">
+                                <p>
+                                    In this page, we will learn about the World Wide Web Consortium (W3C) and its role generating standards that ensure the growth of the World Wide Web, as well as HTML and CSS.
+                                </p>
+                                <a href="project_pages/w3c.html" class="reading mt-2 font-italic">Continue reading...</a>
                             </div>
                         </li>
 
@@ -150,7 +181,7 @@
                 <!--    LEFT SIDE CONTENT  (SIDEBAR) -->
                 <div class="card left-container">
                     <div class="card-header">
-                        How The Internet Works
+                        <strong>How The Internet Works</strong>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><a href="#">Domain names</a></li>
@@ -195,11 +226,11 @@
                 <div class="col-lg-4 col-md-6 footer-links">
                     <h4>Website pages</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Domain names</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">IP Addresses, Packets and Routing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">DNS</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">HTTP and HTTPS protocols</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">W3C HTML and CSS</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="project_pages/domain.html">Domain names</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="project_pages/ipaddress.html">IP Addresses, Packets and Routing</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="project_pages/dns.html">DNS</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="project_pages/httpprotocols.html">HTTP and HTTPS protocols</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="project_pages/w3c.html">W3C HTML and CSS</a></li>
                     </ul>
                 </div>
 
