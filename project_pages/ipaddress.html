@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
 
 </head>
@@ -31,7 +31,7 @@
     <div class="container  align-items-center">
 
         <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand text-white logo" href="#"> <i class="fas fa-globe"></i> <h3 class="logo">The Internet</h3></a>
+            <a class="navbar-brand text-white logo" href="../index.html"> <i class="fas fa-globe"></i> <h3 class="logo">The Internet</h3></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,23 +39,25 @@
 
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="../index.html">Home </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About</a>
+                        <a class="nav-link text-white" href="../about.html">About</a>
                     </li>
-                    <li class="nav-item dropdown">
+
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            How The Internet Works
+                            IP Addresses, Packets and Routing <span class="sr-only">(current)</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item " href="#">Domain names</a>
-                            <a class="dropdown-item " href="#">IP Addresses, Packets and Routing</a>
-                            <a class="dropdown-item " href="#">DNS</a>
-                            <a class="dropdown-item " href="#">HTTP and HTTPS protocols</a>
-                            <a class="dropdown-item " href="#">W3C HTML and CSS</a>
-
+                            <a class="dropdown-item " href="../project_pages/domain.html">Domain names and ICANN</a>
+                            <a class="dropdown-item " >IP Addresses, Packets and Routing</a>
+                            <a class="dropdown-item " href="../project_pages/dns.html">DNS</a>
+                            <a class="dropdown-item " href="../project_pages/httpprotocols.html">HTTP and HTTPS protocols</a>
+                            <a class="dropdown-item " href="../project_pages/w3c.html">W3C HTML and CSS</a>
                         </div>
                     </li>
 
@@ -76,15 +78,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                <h1>How The Internet Works</h1>
-                <h2>In this web site, you will know about how the internet works, its technology, protocols, and different tools that are part of it </h2>
+                <h1>Domain names and ICANN</h1>
+                <h2>
+                    In this page, we will discuss domain names its functionality, and its role inside the internet, also we will talk about ICANN, the organization in charge of accreditation of registrars to sell domain names.
+                </h2>
                 <div class="d-lg-flex">
-                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                    <a href="https://www.youtube.com/watch?v=x3c1ih2NJEg" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> <i class="far fa-play-circle"></i>  Watch Video </a>
+                    <a href="#main-content" class="btn-get-started scrollto">Get Started</a>
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 introduction-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="Pictures/home1.png" class="img-fluid animated" alt="">
+                <img src="../Pictures/mouse.png" class="img-fluid animated home-image" alt="logo.png" >
             </div>
         </div>
     </div>
@@ -101,45 +104,66 @@
 
                 <div class="content">
 
-                    <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
-                    <p >October 8th, 2020 by <a href="#">Alex V. Nunez</a></p>
+                    <h3><strong>Domain names and ICANN</strong></h3>
+                    <p >October 11th, 2020 by <a href="#">Alex V. Nunez</a></p>
                     <hr style="border:solid 1px; color: skyblue; width: 100%; ">
 
-                    <h3><strong>velit pariatur architecto aut nihil</strong></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                    </p>
                 </div>
 
                 <div class="accordion-list">
                     <ul>
+
                         <li>
-                            <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                            <span> Domain names </span>
+                            <div id="accordion-list-1"  data-parent=".accordion-list">
+                                <hr>
+                                <Strong>Definition</Strong>
                                 <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                    A domain name is an identification string that defines a realm of administrative autonomy, authority or control within the Internet. More specifically a domain name is your website name and is the address where Internet users can access your website.
                                 </p>
+                                <p>
+                                    A domain name can be any combination of letters and numbers, and it can be used in combination of the various domain name extensions, such as .com, .net and more as we can see in the picture.
+                                </p>
+                                <p>
+                                    The domain name must be registered before you can use it. Every domain name is unique, and cannot be used to identify more than one website at the same time.
+                                </p>
+                                <p>
+                                    The price of a domain name typically runs between $15-25 per year.
+                                </p>
+
+                                <br>
+                                <strong>Why do we use domain names?</strong>
+                                <p>
+                                    A domain name is used for finding and identifying computers on the Internet. Computers use IP addresses, which are a series of number. However, it is difficult for humans to remember strings of numbers. Because of this, domain names were developed and used to identify entities on the Internet rather than using IP addresses.
+                                </p>
+
+                                <br>
+                                <strong>Domain name examples</strong>
+                                <p>
+                                    In the list below you can find some examples of the domain names currently in use.
+                                </p>
+
+                                <p> - CarInsurance.com</p>
+                                <p> - Insurance.com</p>
+                                <p> - intel.com</p>
+                                <p> - PrivateJet.com</p>
+                                <p> - amazon.com</p>
+
                             </div>
                         </li>
 
                         <li>
-                            <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                            <span> ICANN </span>
+                            <div id="accordion-list-2"  data-parent=".accordion-list">
+                                <hr>
                                 <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    ICANN stand for "Internet Corporation of Assigned Names and Numbers". The purpose of ICANN is to oversee the IP numbering assignment, the domain name system, and to address the issue of domain name ownership resolution for gTLDs.
+                                </p>
+                                <p>
+                                    ICANN is a California-registered nonprofit public benefit corporation that has set policy for the global Domain Name System (DNS) since 1998. ICANN operated under contract from the United States National Telecommunications and Information Administration (NTIA), part of the Department of Commerce. Since 2016, it is formally independent of the U.S. government. Under a different name, the Internet Assigned Numbers Authority (IANA), ICANN also maintains a registry that contains the root DNS database and various other Internet protocol and number assignments.
                                 </p>
                             </div>
                         </li>
-
-                        <li>
-                            <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
-                                <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                </p>
-                            </div>
-                        </li>
-
                     </ul>
                 </div>
 
@@ -150,14 +174,14 @@
                 <!--    LEFT SIDE CONTENT  (SIDEBAR) -->
                 <div class="card left-container">
                     <div class="card-header">
-                        How The Internet Works
+                        <strong>How The Internet Works</strong>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="#">Domain names</a></li>
-                        <li class="list-group-item"><a href="#">IP Addresses, Packets and Routing</a></li>
-                        <li class="list-group-item"><a href="#">DNS</a></li>
-                        <li class="list-group-item"><a href="#">HTTP and HTTPS protocols</a></li>
-                        <li class="list-group-item"><a href="#">W3C HTML and CSS</a></li>
+                        <li class="list-group-item"><a href="../project_pages/ipaddress.html">Domain names and ICANN</li>
+                        <li class="list-group-item">IP Addresses, Packets and Routing</li>
+                        <li class="list-group-item"><a href="../project_pages/dns.html">DNS</a></li>
+                        <li class="list-group-item"><a href="../project_pages/httpprotocols.html">HTTP and HTTPS protocols</a></li>
+                        <li class="list-group-item"><a href="../project_pages/w3c.html">W3C HTML and CSS</a></li>
                     </ul>
                 </div>
 
@@ -195,11 +219,11 @@
                 <div class="col-lg-4 col-md-6 footer-links">
                     <h4>Website pages</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Domain names</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">IP Addresses, Packets and Routing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">DNS</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">HTTP and HTTPS protocols</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">W3C HTML and CSS</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/domain.html">Domain names and ICANN</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/ipaddress.html">IP Addresses, Packets and Routing</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/dns.html">DNS</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/httpprotocols.html">HTTP and HTTPS protocols</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/w3c.html">W3C HTML and CSS</a></li>
                     </ul>
                 </div>
 
