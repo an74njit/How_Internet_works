@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
 
 </head>
@@ -31,7 +31,7 @@
     <div class="container  align-items-center">
 
         <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand text-white logo" href="#"> <i class="fas fa-globe"></i> <h3 class="logo">The Internet</h3></a>
+            <a class="navbar-brand text-white logo" href="../index.html"> <i class="fas fa-globe"></i> <h3 class="logo">The Internet</h3></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,23 +39,25 @@
 
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="../index.html">Home </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About</a>
+                        <a class="nav-link text-white" href="../about.html">About</a>
                     </li>
-                    <li class="nav-item dropdown">
+
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            How The Internet Works
+                            HTTP and HTTPS protocols <span class="sr-only">(current)</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item " href="#">Domain names</a>
-                            <a class="dropdown-item " href="#">IP Addresses, Packets and Routing</a>
-                            <a class="dropdown-item " href="#">DNS</a>
-                            <a class="dropdown-item " href="#">HTTP and HTTPS protocols</a>
-                            <a class="dropdown-item " href="#">W3C HTML and CSS</a>
-
+                            <a class="dropdown-item " href="../project_pages/domain.html">Domain names and ICANN</a>
+                            <a class="dropdown-item " href="../project_pages/ipaddress.html">IP Addresses, Packets and Routing</a>
+                            <a class="dropdown-item " href="../project_pages/dns.html">DNS</a>
+                            <a class="dropdown-item " >HTTP and HTTPS protocols</a>
+                            <a class="dropdown-item " href="../project_pages/w3c.html">W3C HTML and CSS</a>
                         </div>
                     </li>
 
@@ -76,15 +78,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                <h1>How The Internet Works</h1>
-                <h2>In this web site, you will know about how the internet works, its technology, protocols, and different tools that are part of it </h2>
+                <h1>HTTP and HTTPS protocols</h1>
+                <h2>
+                    On this page, we will know about the HTTP and HTTPS Protocols and how they are used to transfer information through the World Wide Web.
+                </h2>
                 <div class="d-lg-flex">
-                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                    <a href="https://www.youtube.com/watch?v=x3c1ih2NJEg" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> <i class="far fa-play-circle"></i>  Watch Video </a>
+                    <a href="#main-content" class="btn-get-started scrollto">Get Started</a>
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 introduction-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="Pictures/home1.png" class="img-fluid animated" alt="">
+                <img src="../Pictures/mouse.png" class="img-fluid animated home-image" alt="logo.png" >
             </div>
         </div>
     </div>
@@ -101,45 +104,60 @@
 
                 <div class="content">
 
-                    <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
-                    <p >October 8th, 2020 by <a href="#">Alex V. Nunez</a></p>
+                    <h3><strong>HTTP and HTTPS protocols</strong></h3>
+                    <p >October 12th, 2020 by <a href="#">Alex V. Nunez</a></p>
                     <hr style="border:solid 1px; color: skyblue; width: 100%; ">
 
-                    <h3><strong>velit pariatur architecto aut nihil</strong></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                    </p>
                 </div>
 
                 <div class="accordion-list">
                     <ul>
+
                         <li>
-                            <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                            <span> HTTP  </span>
+                            <div id="accordion-list-1"  data-parent=".accordion-list">
+                                <hr>
                                 <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                    Hypertext Transfer Protocol (HTTP) is an application layer protocol for the transmission of hypermedia documents, such as HTML. It was designed for communication between web browsers and servers.
+                                </p>
+                                <p>
+                                    It follows the classic client-server model, in which a client establishes a connection, making a request to a server and waiting for a response from it. It is a stateless protocol, which means that the server does not save any data (state) between two requests. Although in most cases it is based on a connection of the TCP / IP type, it can be used on any secure or trusted transport layer, that is, on any protocol that does not lose messages silently, such as UDP.
+                                </p>
+                                <p>
+                                    HTTP relies on simple request / response operations. A client establishes a connection with a server and sends a message with the request data. The server responds with a similar message, containing the status of the operation and its possible result. All operations can attach an object or resource on which they act; Each Web object (HTML document, multimedia file, or CGI application) is known by its URL.
                                 </p>
                             </div>
                         </li>
 
                         <li>
-                            <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                            <span> HTTPS </span>
+                            <div id="accordion-list-2"  data-parent=".accordion-list">
+                                <hr>
                                 <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP, the protocol over which data is sent between your browser and the website that you are connected to. The 'S' at the end of HTTPS stands for 'Secure'. It means all communications between your browser and the website are encrypted. HTTPS is often used to protect highly confidential online transactions like online banking and online shopping order forms.
+                                </p>
+                                <img class="mt-3 ml-4" src="../Pictures/https.PNG" alt="https.PNG">
+                                <p>
+                                    Any website, especially those that require login credentials, should use HTTPS. In modern web browsers such as Chrome, websites that do not use HTTPS are marked differently than those that are. Look for a green padlock in the URL bar to signify the webpage is secure.
+                                </p>
+                                <p>
+                                    Once the packets arrived at their destination they are reassembled and presented to the user. At the destination, the TCP protocol controls the integrity of the data checking if every piece of information reached its destination, if not TCP request the sender to send again the missing pieces, warranting in this way that nothing is lost in the path.
+                                </p>
+                                <p>
+                                    <strong>How does HTTPS work?</strong>
+                                </p>
+                                <p>
+                                    HTTPS uses an encryption protocol to encrypt communications. The protocol is called Transport Layer Security (TLS), although formerly it was known as Secure Sockets Layer (SSL). This protocol secures communications by using what’s known as an asymmetric public key infrastructure. This type of security system uses two different keys to encrypt communications between two parties:
+                                </p>
+
+                                <p>
+                                    1.	The private key - this key is controlled by the owner of a website and it’s kept, as the reader may have speculated, private. This key lives on a web server and is used to decrypt information encrypted by the public key.
+                                </p>
+                                <p>
+                                    2.	The public key - this key is available to everyone who wants to interact with the server in a way that’s secure. Information that’s encrypted by the public key can only be decrypted by the private key.
                                 </p>
                             </div>
                         </li>
-
-                        <li>
-                            <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
-                                <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                </p>
-                            </div>
-                        </li>
-
                     </ul>
                 </div>
 
@@ -150,14 +168,14 @@
                 <!--    LEFT SIDE CONTENT  (SIDEBAR) -->
                 <div class="card left-container">
                     <div class="card-header">
-                        How The Internet Works
+                        <strong>How The Internet Works</strong>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="#">Domain names</a></li>
-                        <li class="list-group-item"><a href="#">IP Addresses, Packets and Routing</a></li>
-                        <li class="list-group-item"><a href="#">DNS</a></li>
-                        <li class="list-group-item"><a href="#">HTTP and HTTPS protocols</a></li>
-                        <li class="list-group-item"><a href="#">W3C HTML and CSS</a></li>
+                        <li class="list-group-item"><a href="../project_pages/ipaddress.html">Domain names and ICANN</a></li>
+                        <li class="list-group-item"><a href="../project_pages/ipaddress.html">IP Addresses, Packets and Routing</a></li>
+                        <li class="list-group-item"><a href="../project_pages/dns.html">DNS</a></li>
+                        <li class="list-group-item">HTTP and HTTPS protocols</li>
+                        <li class="list-group-item"><a href="../project_pages/w3c.html">W3C HTML and CSS</a></li>
                     </ul>
                 </div>
 
@@ -195,11 +213,11 @@
                 <div class="col-lg-4 col-md-6 footer-links">
                     <h4>Website pages</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Domain names</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">IP Addresses, Packets and Routing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">DNS</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">HTTP and HTTPS protocols</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">W3C HTML and CSS</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/domain.html">Domain names and ICANN</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/ipaddress.html">IP Addresses, Packets and Routing</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/dns.html">DNS</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/httpprotocols.html">HTTP and HTTPS protocols</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="../project_pages/w3c.html">W3C HTML and CSS</a></li>
                     </ul>
                 </div>
 
