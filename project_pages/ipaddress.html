@@ -78,9 +78,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                <h1>Domain names and ICANN</h1>
+                <h1>IP Addresses, Packets and Routing</h1>
                 <h2>
-                    In this page, we will discuss domain names its functionality, and its role inside the internet, also we will talk about ICANN, the organization in charge of accreditation of registrars to sell domain names.
+                    This page talks about IP Addresses, its function identifying devices inside a network, and the routing process that the packets take to determine the best path to reach its destination.
                 </h2>
                 <div class="d-lg-flex">
                     <a href="#main-content" class="btn-get-started scrollto">Get Started</a>
@@ -104,7 +104,7 @@
 
                 <div class="content">
 
-                    <h3><strong>Domain names and ICANN</strong></h3>
+                    <h3><strong>IP Addresses, Packets and Routing</strong></h3>
                     <p >October 11th, 2020 by <a href="#">Alex V. Nunez</a></p>
                     <hr style="border:solid 1px; color: skyblue; width: 100%; ">
 
@@ -119,48 +119,73 @@
                                 <hr>
                                 <Strong>Definition</Strong>
                                 <p>
-                                    A domain name is an identification string that defines a realm of administrative autonomy, authority or control within the Internet. More specifically a domain name is your website name and is the address where Internet users can access your website.
+                                    The IP address is a set of numbers that identifies, logically and hierarchically, a device in the network (computer, laptop, smartphone) that uses the Internet Protocol or, which corresponds to the network layer of the TCP / IP model.        </p>
+                                <p>
+                                    There are two main types of Ip addresses:
                                 </p>
                                 <p>
-                                    A domain name can be any combination of letters and numbers, and it can be used in combination of the various domain name extensions, such as .com, .net and more as we can see in the picture.
+                                    <Strong>IPv4:</Strong> It is composed of 32 bits, written as decimal numbers organized in four groups of 8 bits known as octets. The decimal value of each octet is in the range 0 to 255 [the highest 8-bit binary number is 11111111 and those bits, from right to left, have decimal values of 1, 2, 4, 8, 16, 32, 64 and 128, which adds up to 255]. Which can be observed more clearly in the picture below.
                                 </p>
+                                <img  class="mt-2 ml-5" src="../Pictures/ipv4.PNG" alt="ipv4.png">
                                 <p>
-                                    The domain name must be registered before you can use it. Every domain name is unique, and cannot be used to identify more than one website at the same time.
+                                    <Strong>IPv6:</Strong> It is composed of 128 bits, written as hexadecimal numbers organized in eight blocks of 16 bits each separated by colons, as we can see in the following example.
                                 </p>
-                                <p>
-                                    The price of a domain name typically runs between $15-25 per year.
-                                </p>
+
 
                                 <br>
-                                <strong>Why do we use domain names?</strong>
+                                <strong>Ip address classes and examples</strong>
                                 <p>
-                                    A domain name is used for finding and identifying computers on the Internet. Computers use IP addresses, which are a series of number. However, it is difficult for humans to remember strings of numbers. Because of this, domain names were developed and used to identify entities on the Internet rather than using IP addresses.
+                                    There are five main classes of Ip Addresses each used for a specific purpose.
+                                </p>
+                                <p>
+                                    <strong>• Class A:</strong> From 10.0.0.0 to 10.255.255.255, which are generally used for large private networks, for example from a transnational company.
+                                </p>
+                                <p class="text-center">
+                                    Example: 10.35.67.2
+                                </p>
+                                <p>
+                                    <strong>• Class B:</strong> From 172.16.0.0 to 172.31.255.255, which are used for medium-sized networks, such as a local company, school or university.
                                 </p>
 
-                                <br>
-                                <strong>Domain name examples</strong>
+                                <p class="text-center">
+                                    Example: 174.56.8.45
+                                </p>
                                 <p>
-                                    In the list below you can find some examples of the domain names currently in use.
+                                    <strong>• Class C:</strong> From 192.168.0.0 to 192.168.255.255, which are used for smaller networks, such as home networks.
                                 </p>
 
-                                <p> - CarInsurance.com</p>
-                                <p> - Insurance.com</p>
-                                <p> - intel.com</p>
-                                <p> - PrivateJet.com</p>
-                                <p> - amazon.com</p>
+                                <p class="text-center">
+                                    Example: 192.168.10.7
+                                </p>
+                                <p>
+                                    <strong>• Class D:</strong> From 224.0.0.0 to 239.255.255.255, which are used for multicasting.
+                                </p>
 
+                                <p class="text-center">
+                                    Example: 240.55.55.7
+                                </p>
+                                <p>
+                                    <strong>• Class E:</strong> From 240.0.0.0 to 255.255.255.255, which are used for research.
+                                </p>
+
+                                <p class="text-center">
+                                    Example: 250.45.17.5
+                                </p>
                             </div>
                         </li>
 
                         <li>
-                            <span> ICANN </span>
+                            <span> IP Packets and Routing </span>
                             <div id="accordion-list-2"  data-parent=".accordion-list">
                                 <hr>
                                 <p>
-                                    ICANN stand for "Internet Corporation of Assigned Names and Numbers". The purpose of ICANN is to oversee the IP numbering assignment, the domain name system, and to address the issue of domain name ownership resolution for gTLDs.
+                                    IP Routing describes the process of determining the path for data to follow in order to navigate from one computer or server to another. A packet of data traverses from its source router through a web of routers across many networks until it finally reaches its destination.
                                 </p>
                                 <p>
-                                    ICANN is a California-registered nonprofit public benefit corporation that has set policy for the global Domain Name System (DNS) since 1998. ICANN operated under contract from the United States National Telecommunications and Information Administration (NTIA), part of the Department of Commerce. Since 2016, it is formally independent of the U.S. government. Under a different name, the Internet Assigned Numbers Authority (IANA), ICANN also maintains a registry that contains the root DNS database and various other Internet protocol and number assignments.
+                                    When a user wants to send a piece of information to another user like a word document, a picture, or any file. This information is cut into pieces called packets. These packets are sent through the network at different times and paths by networks specialized devices known as routers. These devices are in charge to choose the best path to send the packets in terms of cost.
+                                </p>
+                                <p>
+                                    Once the packets arrived at their destination they are reassembled and presented to the user. At the destination, the TCP protocol controls the integrity of the data checking if every piece of information reached its destination, if not TCP request the sender to send again the missing pieces, warranting in this way that nothing is lost in the path.
                                 </p>
                             </div>
                         </li>
