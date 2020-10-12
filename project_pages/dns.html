@@ -35,7 +35,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div style="width: 10%;"></div>
+            <div style="width: 30%;"></div>
 
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -50,12 +50,12 @@
 
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            IP Addresses, Packets and Routing <span class="sr-only">(current)</span>
+                            DNS <span class="sr-only">(current)</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item " href="../project_pages/domain.html">Domain names and ICANN</a>
-                            <a class="dropdown-item " >IP Addresses, Packets and Routing</a>
-                            <a class="dropdown-item " href="../project_pages/dns.html">DNS</a>
+                            <a class="dropdown-item " href="../project_pages/ipaddress.html">IP Addresses, Packets and Routing</a>
+                            <a class="dropdown-item " >DNS</a>
                             <a class="dropdown-item " href="../project_pages/httpprotocols.html">HTTP and HTTPS protocols</a>
                             <a class="dropdown-item " href="../project_pages/w3c.html">W3C HTML and CSS</a>
                         </div>
@@ -78,9 +78,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                <h1>IP Addresses, Packets and Routing</h1>
+                <h1>Domain Name System (DNS)</h1>
                 <h2>
-                    This page talks about IP Addresses, its function identifying devices inside a network, and the routing process that the packets take to determine the best path to reach its destination.
+                    In this section, we will study the Domain Name System and its role in translating domain names to the corresponding IP address to provide webpages.
                 </h2>
                 <div class="d-lg-flex">
                     <a href="#main-content" class="btn-get-started scrollto">Get Started</a>
@@ -104,8 +104,8 @@
 
                 <div class="content">
 
-                    <h3><strong>IP Addresses, Packets and Routing</strong></h3>
-                    <p >October 11th, 2020 by <a href="#">Alex V. Nunez</a></p>
+                    <h3><strong>Domain Name System (DNS)</strong></h3>
+                    <p >October 12th, 2020 by <a href="#">Alex V. Nunez</a></p>
                     <hr style="border:solid 1px; color: skyblue; width: 100%; ">
 
                 </div>
@@ -114,81 +114,25 @@
                     <ul>
 
                         <li>
-                            <span> IP Address </span>
+                            <span> DNS </span>
                             <div id="accordion-list-1"  data-parent=".accordion-list">
                                 <hr>
                                 <Strong>Definition</Strong>
                                 <p>
-                                    The IP address is a set of numbers that identifies, logically and hierarchically, a device in the network (computer, laptop, smartphone) that uses the Internet Protocol or, which corresponds to the network layer of the TCP / IP model.        </p>
-                                <p>
-                                    There are two main types of Ip addresses:
+                                    The Domain Name System (DNS) is the Internet’s system to translate domain names into numeric Internet Protocol (IP) addresses. In other words, is the phone book on the internet. Humans access information online using domain names, such as nytimes.com or sports.com. Web browsers interact using Internet Protocol (IP) addresses. DNS servers translate domain names to IP addresses so that browsers can load Internet resources.
                                 </p>
                                 <p>
-                                    <Strong>IPv4:</Strong> It is composed of 32 bits, written as decimal numbers organized in four groups of 8 bits known as octets. The decimal value of each octet is in the range 0 to 255 [the highest 8-bit binary number is 11111111 and those bits, from right to left, have decimal values of 1, 2, 4, 8, 16, 32, 64 and 128, which adds up to 255]. Which can be observed more clearly in the picture below.
+                                    Each device connected to the Internet has a unique IP address that other devices can use to find the device. DNS servers eliminate the need for humans to memorize IP addresses such as 192.168.1.1, or new more complex alphanumeric IP addresses, such as 2400: cb00: 2048: 1:: c629: d7a2.
                                 </p>
-                                <img  class="mt-2 ml-5" src="../Pictures/ipv4.PNG" alt="ipv4.png">
-                                <p>
-                                    <Strong>IPv6:</Strong> It is composed of 128 bits, written as hexadecimal numbers organized in eight blocks of 16 bits each separated by colons, as we can see in the following example.
-                                </p>
-
-
                                 <br>
-                                <strong>Ip address classes and examples</strong>
+                                <strong>How does DNS work?</strong>
                                 <p>
-                                    There are five main classes of Ip Addresses each used for a specific purpose.
+                                    The DNS server converts a hostname (such as www.example.com) to an IP address supported by the computer (such as 192.168.19.1). An IP address is given to every device on the Internet, and that address will be needed to find the appropriate Internet device, just like a street address is used to find a private home. When a user wants to load a page, what the user types in their web browser example.com must be translated into an address that the computer can understand to locate the example.com web page.
                                 </p>
-                                <p>
-                                    <strong>• Class A:</strong> From 10.0.0.0 to 10.255.255.255, which are generally used for large private networks, for example from a transnational company.
-                                </p>
-                                <p class="text-center">
-                                    Example: 10.35.67.2
-                                </p>
-                                <p>
-                                    <strong>• Class B:</strong> From 172.16.0.0 to 172.31.255.255, which are used for medium-sized networks, such as a local company, school or university.
-                                </p>
-
-                                <p class="text-center">
-                                    Example: 174.56.8.45
-                                </p>
-                                <p>
-                                    <strong>• Class C:</strong> From 192.168.0.0 to 192.168.255.255, which are used for smaller networks, such as home networks.
-                                </p>
-
-                                <p class="text-center">
-                                    Example: 192.168.10.7
-                                </p>
-                                <p>
-                                    <strong>• Class D:</strong> From 224.0.0.0 to 239.255.255.255, which are used for multicasting.
-                                </p>
-
-                                <p class="text-center">
-                                    Example: 240.55.55.7
-                                </p>
-                                <p>
-                                    <strong>• Class E:</strong> From 240.0.0.0 to 255.255.255.255, which are used for research.
-                                </p>
-
-                                <p class="text-center">
-                                    Example: 250.45.17.5
-                                </p>
+                                <img src="" alt="">
                             </div>
                         </li>
 
-                        <li>
-                            <span> IP Packets and Routing </span>
-                            <div id="accordion-list-2"  data-parent=".accordion-list">
-                                <hr>
-                                <p>
-                                    IP Routing describes the process of determining the path for data to follow in order to navigate from one computer or server to another. A packet of data traverses from its source router through a web of routers across many networks until it finally reaches its destination.
-                                </p>
-                                <p>
-                                    When a user wants to send a piece of information to another user like a word document, a picture, or any file. This information is cut into pieces called packets. These packets are sent through the network at different times and paths by networks specialized devices known as routers. These devices are in charge to choose the best path to send the packets in terms of cost.
-                                </p>
-                                <p>
-                                    Once the packets arrived at their destination they are reassembled and presented to the user. At the destination, the TCP protocol controls the integrity of the data checking if every piece of information reached its destination, if not TCP request the sender to send again the missing pieces, warranting in this way that nothing is lost in the path.
-                                </p>
-                            </div>
-                        </li>
                     </ul>
                 </div>
 
@@ -202,9 +146,9 @@
                         <strong>How The Internet Works</strong>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="../project_pages/ipaddress.html">Domain names and ICANN</a></li>
-                        <li class="list-group-item">IP Addresses, Packets and Routing</li>
-                        <li class="list-group-item"><a href="../project_pages/dns.html">DNS</a></li>
+                        <li class="list-group-item"><a href="../project_pages/domain.html">Domain names and ICANN</a></li>
+                        <li class="list-group-item"><a href="../project_pages/ipaddress.html">IP Addresses, Packets and Routing</a></li>
+                        <li class="list-group-item">DNS</li>
                         <li class="list-group-item"><a href="../project_pages/httpprotocols.html">HTTP and HTTPS protocols</a></li>
                         <li class="list-group-item"><a href="../project_pages/w3c.html">W3C HTML and CSS</a></li>
                     </ul>
