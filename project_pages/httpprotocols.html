@@ -105,7 +105,7 @@
                 <div class="content">
 
                     <h3><strong>HTTP and HTTPS protocols</strong></h3>
-                    <p >October 11th, 2020 by <a href="#">Alex V. Nunez</a></p>
+                    <p >October 12th, 2020 by <a href="#">Alex V. Nunez</a></p>
                     <hr style="border:solid 1px; color: skyblue; width: 100%; ">
 
                 </div>
@@ -117,59 +117,15 @@
                             <span> HTTP  </span>
                             <div id="accordion-list-1"  data-parent=".accordion-list">
                                 <hr>
-                                <Strong>Definition</Strong>
                                 <p>
-                                    The IP address is a set of numbers that identifies, logically and hierarchically, a device in the network (computer, laptop, smartphone) that uses the Internet Protocol or, which corresponds to the network layer of the TCP / IP model.        </p>
-                                <p>
-                                    There are two main types of Ip addresses:
+                                    Hypertext Transfer Protocol (HTTP) is an application layer protocol for the transmission of hypermedia documents, such as HTML. It was designed for communication between web browsers and servers.
                                 </p>
                                 <p>
-                                    <Strong>IPv4:</Strong> It is composed of 32 bits, written as decimal numbers organized in four groups of 8 bits known as octets. The decimal value of each octet is in the range 0 to 255 [the highest 8-bit binary number is 11111111 and those bits, from right to left, have decimal values of 1, 2, 4, 8, 16, 32, 64 and 128, which adds up to 255]. Which can be observed more clearly in the picture below.
-                                </p>
-                                <img  class="mt-2 ml-5" src="../Pictures/ipv4.PNG" alt="ipv4.png">
-                                <p>
-                                    <Strong>IPv6:</Strong> It is composed of 128 bits, written as hexadecimal numbers organized in eight blocks of 16 bits each separated by colons, as we can see in the following example.
+                                    It follows the classic client-server model, in which a client establishes a connection, making a request to a server and waiting for a response from it. It is a stateless protocol, which means that the server does not save any data (state) between two requests. Although in most cases it is based on a connection of the TCP / IP type, it can be used on any secure or trusted transport layer, that is, on any protocol that does not lose messages silently, such as UDP.
                                 </p>
 
-
-                                <br>
-                                <strong>Ip address classes and examples</strong>
                                 <p>
-                                    There are five main classes of Ip Addresses each used for a specific purpose.
-                                </p>
-                                <p>
-                                    <strong>• Class A:</strong> From 10.0.0.0 to 10.255.255.255, which are generally used for large private networks, for example from a transnational company.
-                                </p>
-                                <p class="text-center">
-                                    Example: 10.35.67.2
-                                </p>
-                                <p>
-                                    <strong>• Class B:</strong> From 172.16.0.0 to 172.31.255.255, which are used for medium-sized networks, such as a local company, school or university.
-                                </p>
-
-                                <p class="text-center">
-                                    Example: 174.56.8.45
-                                </p>
-                                <p>
-                                    <strong>• Class C:</strong> From 192.168.0.0 to 192.168.255.255, which are used for smaller networks, such as home networks.
-                                </p>
-
-                                <p class="text-center">
-                                    Example: 192.168.10.7
-                                </p>
-                                <p>
-                                    <strong>• Class D:</strong> From 224.0.0.0 to 239.255.255.255, which are used for multicasting.
-                                </p>
-
-                                <p class="text-center">
-                                    Example: 240.55.55.7
-                                </p>
-                                <p>
-                                    <strong>• Class E:</strong> From 240.0.0.0 to 255.255.255.255, which are used for research.
-                                </p>
-
-                                <p class="text-center">
-                                    Example: 250.45.17.5
+                                    HTTP relies on simple request / response operations. A client establishes a connection with a server and sends a message with the request data. The server responds with a similar message, containing the status of the operation and its possible result. All operations can attach an object or resource on which they act; Each Web object (HTML document, multimedia file, or CGI application) is known by its URL.
                                 </p>
                             </div>
                         </li>
@@ -179,13 +135,27 @@
                             <div id="accordion-list-2"  data-parent=".accordion-list">
                                 <hr>
                                 <p>
-                                    IP Routing describes the process of determining the path for data to follow in order to navigate from one computer or server to another. A packet of data traverses from its source router through a web of routers across many networks until it finally reaches its destination.
+                                    Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP, the protocol over which data is sent between your browser and the website that you are connected to. The 'S' at the end of HTTPS stands for 'Secure'. It means all communications between your browser and the website are encrypted. HTTPS is often used to protect highly confidential online transactions like online banking and online shopping order forms.
                                 </p>
+                                <img class="mt-3 ml-4" src="../Pictures/https.PNG" alt="https.PNG">
                                 <p>
-                                    When a user wants to send a piece of information to another user like a word document, a picture, or any file. This information is cut into pieces called packets. These packets are sent through the network at different times and paths by networks specialized devices known as routers. These devices are in charge to choose the best path to send the packets in terms of cost.
+                                    Any website, especially those that require login credentials, should use HTTPS. In modern web browsers such as Chrome, websites that do not use HTTPS are marked differently than those that are. Look for a green padlock in the URL bar to signify the webpage is secure.
                                 </p>
                                 <p>
                                     Once the packets arrived at their destination they are reassembled and presented to the user. At the destination, the TCP protocol controls the integrity of the data checking if every piece of information reached its destination, if not TCP request the sender to send again the missing pieces, warranting in this way that nothing is lost in the path.
+                                </p>
+                                <p>
+                                    <strong>How does HTTPS work?</strong>
+                                </p>
+                                <p>
+                                    HTTPS uses an encryption protocol to encrypt communications. The protocol is called Transport Layer Security (TLS), although formerly it was known as Secure Sockets Layer (SSL). This protocol secures communications by using what’s known as an asymmetric public key infrastructure. This type of security system uses two different keys to encrypt communications between two parties:
+                                </p>
+
+                                <p>
+                                    1.	The private key - this key is controlled by the owner of a website and it’s kept, as the reader may have speculated, private. This key lives on a web server and is used to decrypt information encrypted by the public key.
+                                </p>
+                                <p>
+                                    2.	The public key - this key is available to everyone who wants to interact with the server in a way that’s secure. Information that’s encrypted by the public key can only be decrypted by the private key.
                                 </p>
                             </div>
                         </li>
@@ -213,7 +183,7 @@
                 <div class="p-4 mb-3 bg-light rounded left-container">
                     <h4 class="font-italic">Elsewhere</h4>
                     <ol class="list-unstyled">
-                        <li><a href="https://github.com/an74njit/Project1/tree/master">GitHub</a></li>
+                        <li><a href="https://github.com/an74njit/How_Internet_works">GitHub</a></li>
                         <li><a href="https://web.njit.edu/~an74/Project1/">AFS</a></li>
                     </ol>
                 </div>
@@ -221,7 +191,7 @@
         </div>
 
     </div>
-</section><!-- End Why Us Section -->
+</section>
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
